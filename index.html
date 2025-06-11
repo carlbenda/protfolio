@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mursalin Irfan - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto+Slab:wght@700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'sans': ['Poppins', 'sans-serif'],
+            'serif': ['Roboto Slab', 'serif'],
+          },
+          colors: {
+            'primary': '#34D399', // Emerald 400 - vibrant green
+            'secondary': '#FBBF24', // Amber 400 - warm yellow/orange
+            'accent': '#854D0E', // Amber 800 - dark, earthy brown
+            'light-bg': '#FEFDF2', // Custom light off-white/very light yellow
+            'dark-text': '#422006', // Amber 950 - very dark brown
+            'light-text': '#FAFAF9', // Stone 50 - creamy white
+            'ui-bg': '#FFFBEB', // Amber 50 - light beige/tan for cards/modals
+            'ui-border': '#FDE68A', // Amber 200 - soft yellow for borders
+            'muted-text': '#A8A29E', // Stone 400 - for less important text
+            'danger': '#EF4444', // Red 500
+
+            // Admin Panel Colors
+            'admin-bg': '#F3F4F6', // gray-100
+            'admin-text': '#1F2937', // gray-800
+            'admin-primary': '#3B82F6', // blue-500
+            'admin-primary-hover': '#2563EB', // blue-600
+            'admin-secondary-bg': '#FFFFFF', // white
+            'admin-border': '#D1D5DB', // gray-300
+            'admin-muted-text': '#6B7280', // gray-500
+          }
+        }
+      }
+    }
+  </script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0-rc-f994737d14-20240522",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0-rc-f994737d14-20240522/client",
+    "@google/genai": "https://esm.sh/@google/genai@^1.4.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-light-bg text-dark-text font-sans antialiased">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
